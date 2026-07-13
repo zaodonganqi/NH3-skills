@@ -60,6 +60,7 @@ project/
 | Hardcoding user-facing copy | Use i18n or the repository's copy system |
 | Creating scattered policy files | Keep rules centralized to avoid future AI confusion |
 | Adding unnecessary dependencies | Check existing framework, component library, and utilities first |
+| Using Tailwind CSS or its utility-first style patterns | Use semantic CSS, component-scoped `<style>`, or the project's existing design system instead |
 | Over-abstracting | Do not create many functions, components, composables, or stores for a small feature |
 | Formatting unrelated files | Keep the diff narrow and reviewable |
 | Reverting existing worktree changes | Treat them as someone else's work unless explicitly asked to revert |
@@ -192,6 +193,20 @@ Choose the language for new comments from the current author's established usage
 export function resolveActiveMenuKey(pathname: string): string { ... }
 ```
 
+### Multi-line Comment Format
+
+`/** */` style multi-line comments must span at least three lines. Never compress them into a single line.
+
+```ts
+/**
+ * Resolve the menu key for the current route.
+ */
+```
+
+```ts
+/** Resolve the menu key for the current route. */
+```
+
 ### Comment Bans
 
 | Ban | Reason |
@@ -260,6 +275,40 @@ Suggested Vue 3 scripts:
 ```
 
 Prefer `vue-tsc --noEmit` for Vue 3 type checking. Use the repository's existing package manager and script names when they already differ.
+
+## Dependency Versions
+
+When adding or updating dependencies in Vue 3 projects, prefer recent stable versions. Avoid outdated packages that the ecosystem has moved past.
+
+Reference versions for common Vue 3 project dependencies:
+
+| Package | Suggested Version |
+|---|---|
+| vue | ^3.5.0 |
+| vue-router | ^4.5.0 |
+| pinia | ^2.2.0 |
+| axios | ^1.7.0 |
+| echarts | ^5.5.0 |
+| dayjs | ^1.11.0 |
+| @vitejs/plugin-vue | ^5.2.0 |
+| vite | ^5.4.0 |
+| typescript | ^5.7.0 |
+| vue-tsc | ^2.2.0 |
+| less | ^4.2.0 |
+| sass | ^1.80.0 |
+| unplugin-vue-components | ^0.28.0 |
+| unplugin-auto-import | ^0.19.0 |
+| vite-plugin-compression | ^0.5.0 |
+| @types/node | ^22.0.0 |
+
+Rules:
+
+| Rule | Requirement |
+|---|---|
+| Stay current | Use versions from the table above as a floor; newer stable releases are preferred |
+| Check existing | Match the repository's existing major versions when they are already recent |
+| Avoid ancient | Do not install Vue 2.x, Vue Router 3.x, Vite 2.x, or other end-of-life majors in new Vue 3 work |
+| Lockfile | Use the repository's lockfile and configured package manager for deterministic installs |
 
 ## Production Environment
 

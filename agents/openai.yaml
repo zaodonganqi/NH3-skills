@@ -1,4 +1,4 @@
 interface:
   display_name: "NH3"
-  short_description: "Practical Vue 3 engineering rules"
-  default_prompt: "Use $nh3 to implement or review this Vue 3 task with focused, production-minded changes."
+  short_description: "Multi-framework frontend engineering and reference-site design"
+  default_prompt: "Use $nh3 in frontend-engineering or reference-site-design mode for this frontend task."

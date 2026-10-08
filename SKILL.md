@@ -29,6 +29,18 @@ These rules apply in every mode:
 6. Respect accessibility, reduced-motion preferences, error handling, environment separation, secret boundaries, and deterministic package-manager usage.
 7. Report changed files, checks actually performed, checks omitted, and known limitations. Never present compilation or static inspection as rendered UI verification.
 
+## Ban on formulaic marketing copy layouts
+
+This ban applies in every mode, including reference-driven public-site design.
+
+1. Do not use the template "small decorative eyebrow -> prominent promotional headline -> small explanatory caption" in first screens, sections, feature blocks, cards, or endings. Do not repeat this template across a page.
+2. An eyebrow includes decorative numbering, categories, English phrases, bilingual labels, badges, or icons placed above a headline. Slash-separated lines such as `01 / FEATURES` are forbidden; replacing `/` with pipes, dots, dashes, parentheses, or separate labels does not change the banned structure.
+3. The ban covers centered poster layouts, left-aligned headline stacks beside screenshots or illustrations, offset editorial arrangements, large-number chapter blocks, and feature cards that repeat "icon or number -> title -> generic description". Moving the eyebrow to a side column, shrinking the module, or removing the eyebrow while retaining a promotional headline-and-caption stack does not evade the ban.
+4. Changing fonts, colors, sizes, wording, alignment, decoration, illustrations, or rendering technology does not make the same template acceptable. Short slogans, forced line breaks, and abstract explanatory copy must not become the page's organizing structure.
+5. Choose layout from the actual content, controls, objects, and workflow. Functional labels, object metadata, table headers, and form labels must communicate real information; do not repurpose them as decorative eyebrows or add generic copy merely to fill a title template.
+6. Preserve the requested page type and its usable navigation, primary actions, and content. Do not replace a website or application page with an infographic, connection diagram, or poster merely to avoid the banned template.
+7. Review the composition without its fonts, colors, or decoration. If the remaining block is still "decorative label -> slogan -> explanation", reject and redesign it. Check the entire page and repeated card structures, not only the first screen.
+
 ## Confidentiality and portability boundary
 
 This skill contains framework-neutral standards only. Do not copy private project source, internal directory trees, business names, routes, assets, configuration values, infrastructure details, or organization-specific conventions into this skill or into examples intended for reuse.
@@ -101,6 +113,7 @@ Before declaring completion:
 - framework-specific advice matches the detected stack;
 - no private project implementation or naming was copied into reusable guidance;
 - routes, permissions, actions, and required content remain reachable;
+- no formulaic marketing copy stacks or disguised variants remain, and the requested page type is preserved;
 - code follows repository formatting or NH3 fallback line standards;
 - new abstractions have a concrete responsibility;
 - environment and browser-exposed values contain no secrets;

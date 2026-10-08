@@ -53,6 +53,8 @@ Correct these before handoff:
 - route navigation was converted into section navigation without authorization;
 - generic cards, glass panels, bento grids, empty frames, or tiny-label-plus-accent-rule filler replaced actual composition;
 - unexplained short English kickers, badge copy, or status abbreviations were invented to simulate detail;
+- a formulaic marketing copy stack or a disguised variant remains anywhere on the page (see the [shared layout ban](../../SKILL.md#ban-on-formulaic-marketing-copy-layouts));
+- the requested website or application page was replaced by an infographic, connection diagram, or poster to evade the layout ban;
 - product proof uses the wrong ratio, acts as an empty placeholder, remains materially offscreen, collides at its settled state, or has no useful hold;
 - the first viewport subject is accidentally pinned to several edges;
 - compact output is only a shrunken desktop composition;
